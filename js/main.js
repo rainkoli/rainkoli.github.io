@@ -122,6 +122,7 @@
 
     const $toc = $('#toc');
     if ($toc.length > 0) {
+        $toc.addClass('column-left is-sticky'); // ����
         const $mask = $('<div>');
         $mask.attr('id', 'toc-mask');
 
@@ -136,4 +137,6 @@
         $mask.on('click', toggleToc);
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
+
+    
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
